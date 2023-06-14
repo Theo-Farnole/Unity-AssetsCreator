@@ -7,6 +7,10 @@ Stop writing MenuItem foreach for your Scriptable Objects.
 
 <hr>
 
+<div align="center">
+<img src="Documentation/demo.gif" height=600/>
+</div>
+
 ## Installation
 
 - Project supports Unity Package Manager. To install the project as a Git package do the following:
