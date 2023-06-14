@@ -2,7 +2,7 @@
 <br>
 
 <p align="center">
-Stop writing MenuItem foreach for your Scriptable Objects.
+Stop writing CreateAssetMenu foreach for your Scriptable Objects.
 </p>
 
 <hr>
