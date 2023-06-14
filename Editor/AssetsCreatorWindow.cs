@@ -66,6 +66,7 @@ namespace TF.AssetsCreator
                         if (GUILayout.Button(name))
                         {
                             previewObject = CreateInstance(type);
+                            previewObject.name = name;
                             previewObjectEditor = Editor.CreateEditor(previewObject);
                             //CreateAsset(type, type.Name);
                         }
@@ -96,7 +97,7 @@ namespace TF.AssetsCreator
         {
             if (!previewObject) return;
 
-            var dest = targetFolder + "/" + name + ".asset";
+            var dest = targetFolder + "/" + previewObject.name + ".asset";
             dest = AssetDatabase.GenerateUniqueAssetPath(dest);
             ProjectWindowUtil.CreateAsset(previewObject, dest);
             EditorApplication.delayCall += this.Close;
